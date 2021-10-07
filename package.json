@@ -1,5 +1,5 @@
 {
-  "name": "recoilize",
+  "name": "react-recoilize",
   "jest": {
     "setupFiles": [
       "jest-webextension-mock"
