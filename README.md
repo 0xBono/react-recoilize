@@ -4,11 +4,13 @@
 <img src='./src/extension/build/assets/cover-photo-logo-recoilize.jpg' width=100%>
 </p>
 
-<h1>Debugger for Recoil Applications</h1>
+<h1>Debugger for Recoil Applications(New)</h1>
 
 # [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/oslabs-beta/Recoilize/blob/staging/LICENSE) [![npm version](https://img.shields.io/npm/v/recoilize)](https://www.npmjs.com/package/recoilize) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 [Korean README 한국어](README_KO.md)
+
+<h2>The existing version did not work properly, so I added corrections after Fork.</h2>
 
 <h1> About</h1>
 <p>
