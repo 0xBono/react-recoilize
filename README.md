@@ -4,11 +4,13 @@
 <img src='./src/extension/build/assets/cover-photo-logo-recoilize.jpg' width=100%>
 </p>
 
-<h1>Debugger for Recoil Applications</h1>
+<h1>Debugger for Recoil Applications(New)</h1>
 
 # [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/oslabs-beta/Recoilize/blob/staging/LICENSE) [![npm version](https://img.shields.io/npm/v/recoilize)](https://www.npmjs.com/package/recoilize) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 [Korean README 한국어](README_KO.md)
+
+<h2>The existing version did not work properly, so I added corrections after Fork.</h2>
 
 <h1> About</h1>
 <p>
@@ -37,7 +39,7 @@ Installation
 #### Install Recoilize Module
 
 ```js
-npm install recoilize
+npm install react-recoilize
 ```
 
 ### ** IMPORTANT **
@@ -45,14 +47,14 @@ npm install recoilize
 #### Import RecoilizeDebugger from the Recoilize module
 
 ```js
-import RecoilizeDebugger from 'recoilize';
+import { RecoilizeDebugger } from 'react-recoilize';
 ```
 
 #### Integrate RecoilizeDebugger as a React component within the recoil root:
 
 ```js
-import RecoilizeDebugger from 'recoilize';
-import RecoilRoot from 'recoil';
+import { RecoilizeDebugger } from 'react-recoilize';
+import { RecoilRoot } from 'recoil';
 
 ReactDOM.render(
   <RecoilRoot>
@@ -68,8 +70,8 @@ ReactDOM.render(
 #### Example:
 
 ```js
-import RecoilizeDebugger from 'recoilize';
-import RecoilRoot from 'recoil';
+import { RecoilizeDebugger } from 'react-recoilize';
+import { RecoilRoot } from 'recoil';
 
 //If your app injects on an element with ID of 'app'
 const app = document.getElementById('app');
@@ -96,7 +98,7 @@ function MyApp({ Component, pageProps }) {
   const [root, setRoot] = useState(null)
   const RecoilizeDebugger = dynamic(
 	() => {
-	  return import('recoilize');
+	  return import('react-recoilize');
 	},
 	{ ssr: false}
   );

@@ -1,11 +1,11 @@
 {
-  "name": "recoilize",
+  "name": "react-recoilize",
   "jest": {
     "setupFiles": [
       "jest-webextension-mock"
     ]
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Chrome extension that helps debug Recoil applications by memorizing the state of components with every render.",
   "main": "index.js",
   "scripts": {

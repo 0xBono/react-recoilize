@@ -20,7 +20,7 @@ let throttleLimit = 70;
 // persistedSnapshots initially null
 // let persistedSnapshots = null;
 
-export default function RecoilizeDebugger(props) {
+export const RecoilizeDebugger = (props) => {
   // We should ask for Array of atoms and selectors.
   // Captures all atoms that were defined to get the initial state
 
@@ -56,8 +56,8 @@ export default function RecoilizeDebugger(props) {
   const nodeSubscriptions = {};
 
   nodes.forEach(node => {
-    const getDeps = [...snapshot.getDeps_UNSTABLE(node)];
-    nodeDeps[node.key] = getDeps.map(dep => dep.key);
+    const snapshotDeps = [...getSnapshotDeps(node).deps];
+    nodeDeps[node.key] = snapshotDeps.map(dep => dep.key);
   });
 
   for (let key in nodeDeps) {
