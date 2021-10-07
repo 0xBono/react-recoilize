@@ -20,7 +20,7 @@ let throttleLimit = 70;
 // persistedSnapshots initially null
 // let persistedSnapshots = null;
 
-export default function RecoilizeDebugger(props) {
+export const RecoilizeDebugger = (props) => {
   // We should ask for Array of atoms and selectors.
   // Captures all atoms that were defined to get the initial state
 

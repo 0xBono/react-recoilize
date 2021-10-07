@@ -39,7 +39,7 @@ Installation
 #### Install Recoilize Module
 
 ```js
-npm install recoilize
+npm install react-recoilize
 ```
 
 ### ** IMPORTANT **
@@ -47,14 +47,14 @@ npm install recoilize
 #### Import RecoilizeDebugger from the Recoilize module
 
 ```js
-import RecoilizeDebugger from 'recoilize';
+import { RecoilizeDebugger } from 'react-recoilize';
 ```
 
 #### Integrate RecoilizeDebugger as a React component within the recoil root:
 
 ```js
-import RecoilizeDebugger from 'recoilize';
-import RecoilRoot from 'recoil';
+import { RecoilizeDebugger } from 'react-recoilize';
+import { RecoilRoot } from 'recoil';
 
 ReactDOM.render(
   <RecoilRoot>
@@ -70,8 +70,8 @@ ReactDOM.render(
 #### Example:
 
 ```js
-import RecoilizeDebugger from 'recoilize';
-import RecoilRoot from 'recoil';
+import { RecoilizeDebugger } from 'react-recoilize';
+import { RecoilRoot } from 'recoil';
 
 //If your app injects on an element with ID of 'app'
 const app = document.getElementById('app');
@@ -98,7 +98,7 @@ function MyApp({ Component, pageProps }) {
   const [root, setRoot] = useState(null)
   const RecoilizeDebugger = dynamic(
 	() => {
-	  return import('recoilize');
+	  return import('react-recoilize');
 	},
 	{ ssr: false}
   );
